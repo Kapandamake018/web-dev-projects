@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        :root {
+            --primary-color: #848391;
+            --secondary-color: #DEC1A1;
+            --bg-color: #282828;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            background: var(--secondary-color);
+            padding: 1rem;
+        }
+
+        .profile-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .profile-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--secondary-color);
+            padding: 1rem;
+        }
+
+        nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(10px);
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 1rem;
+        }
+
+        .content {
+            padding: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MY PROFILE</h1>
+        </header>
+
+        <section class="profile-section">
+            <div class="profile-image">
+                <img src="twc.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h2>Mr. PlusAPlus</h2>
+                <h3>Thomas Kapanda</h3>
+                <p>Since 2022</p>
+                <p>mrplusaplus@gmail.com</p>
+                <p>cell: 21000006</p>
+            </div>
+        </section>
+
+        <main>
+            <nav>
+                <a href="qualification.html">Qualification</a>
+                <a href="workexperience.html">Work Experience</a>
+                <a href="skillset.html">Skill Set</a>
+                <a href="competencies.html">Competencies</a>
+                <a href="accomplishments.html">Accomplishments</a>
+                <a href="personalinfo.html">Personal Info</a>
+                <a href="languagesknown.html">Languages Known</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="myworks.html">My Works</a>
+                <a href="contactme.html">Contact Me</a>
+            </nav>
+
+            <div class="content">
+                <h2>Hi there, hello! 👋</h2>
+                <p>Welcome to My Profile :-)</p>
+                <p>I like cartoons. I'm into the concept of animation and technology so I'm something of a computer scientist myself.</p>
+                <p>I am currently a ZCAS University student in Second Year and so far it's not bad lol.</p>
+                <p>Here are a few more things about me:</p>
+                <ul>
+                    <li><strong>I like cartoons.</strong> I know I already mentioned it, but I'm emphasizing it now.</li>
+                    <li>I like the concept of making a video game</li>
+                    <li>I'm looking for a money leak!</li>
+                </ul>
+                <p>Explore My Profile (if you want) For More Information!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright</p>
+        </footer>
+    </div>
+</body>
+</html>
